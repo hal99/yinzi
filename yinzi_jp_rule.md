@@ -22,7 +22,16 @@
 上記の２つを合わせてコントロールすることで得点を得ることが基本コンセプトとなっている。
 
 # 基本的なゲームの流れ
+各ラウンドは以下の順で処理する(セットアップをスキップしているが、各プレイヤーは手札を３枚持っている)
 
+1. ボーナス獲得
+2. アクション実施
+3. 食事
+4. イベント解決
+5. 後発出荷
+6. 次ラウンド準備
+
+上記を4回繰り返すとゲーム終了し、ゲーム終了処理に入る。
 
 
 
@@ -36,9 +45,11 @@
 
 
 # コマンド備忘録
+~~~
 echo "# yinzi" >> README.md
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/hal99/yinzi.git
 git push -u origin master
+~~~
